@@ -1,17 +1,14 @@
 class Dog
-  def name=(name)
-    instance_variable_set(:@name, name)
+  def initialize(name,breed)
+    @name = name
+    @breed = breed
   end
 
   def name
-    instance_variable_get(:@name)
-  end
-
-  def breed=(breed)
-    instance_variable_set(:@breed, breed)
+    @name
   end
 
   def breed
-    instance_variable_get(:@breed)
+    @breed
   end
 end
